@@ -7,881 +7,870 @@
 	<title>kinobase</title>
 </head>
 <body>
-	<header class="">
-		<div class="section-wrapper main-nav-wrapper">
-			<nav class="page-container main-nav">
-				<div class="nav-logo-bar">
-					<a href="#kinobase">
-						<img src="img/kinobase-logo.png" alt="kinobase">
-					</a>
-					<span class="nav-logo-bar__slogan">
+<header class="">
+	<div class="section-wrapper section-wrapper_main-nav">
+		<nav class="page-container main-nav">
+			<div class="nav-logo-bar">
+				<a href="#kinobase">
+					<img src="img/kinobase-logo.png" alt="kinobase">
+				</a>
+				<span class="nav-logo-bar__slogan">
 						Открой мир кино с нами
 					</span>
-				</div>
-				<div class="nav-menu">
-					<ul class="nav-menu__list">
-						<li class="nav-menu__item">
-							<a href="#movies" class="nav-menu__button">кино</a>
-						</li>
-						<li class="nav-menu__item">
-							<a href="#shows" class="nav-menu__button">сериалы</a>
-						</li>
-						<li class="nav-menu__item">
-							<a href="#afisha" class="nav-menu__button">афиша</a>
-						</li>
-						<li class="nav-menu__item">
-							<a href="#texts" class="nav-menu__button">тексты</a>
-						</li>
-						<li class="nav-menu__item">
-							<a href="#ratings" class="nav-menu__button">рейтинги</a>
-						</li>
-						<li class="nav-menu__item">
-							<a href="#channels" class="nav-menu__button">программы и шоу</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-
-
-		<!--<nav class="navigation-menu container-fluid content__fixed">
-			<ul class="list-unstyled text-nowrap navigation-menu__button">
-				<li class="col-6">
-					<a href="#register" class="navigation-menu__button--signup">Создать аккаунт</a>
-				</li>
-				<li class="col-6">
-					<a href="#sign-in" class="navigation-menu__button--login">Войти</a>
-				</li>
-			</ul>
 			</div>
-			<div class="col-6">
-				<div class="row no-gutters">
-					<div class="col-1">
-						<a href="#search" class="navigation-menu__search-button">Поиск</a>
-					</div>
-					<div class="col-11">
-						<div class="navigation-menu__relative-block">
-							<input class="navigation-menu__search-field" type="text" placeholder="Что будем искать?" name="search">
-							<img src="" class="navigation-menu__search-field--image-corner-bottom">
-							<img src="" class="navigation-menu__search-field--image-corner-top">
-							<img src="" class="navigation-menu__search-field--image-magnifier">
-							<span class="navigation-menu__search-field--caption">
-										<a href="#widesearch" class="navigation-menu__search-field--caption-item">расширенный поиск</a>
-										<a href="#whatlookingfor" class="navigation-menu__search-field--caption-item">что ищут</a>
-									</span>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div class="nav-menu">
+				<ul class="nav-menu__list">
+					<li class="nav-menu__item">
+						<a href="#movies" class="nav-menu__button">кино</a>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#shows" class="nav-menu__button">сериалы</a>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#afisha" class="nav-menu__button">афиша</a>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#texts" class="nav-menu__button">тексты</a>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#ratings" class="nav-menu__button">рейтинги</a>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#channels" class="nav-menu__button">программы и шоу</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
-	</header>
+	</div>
+	<div class="section-wrapper section-wrapper_search-bar">
+		<nav class="page-container main-search-bar">
+			<div class="account-menu">
+				<ul class="account-menu__list">
+					<li class="account-menu__button">
+						<a href="#register">Создать аккаунт</a>
+					</li>
+					<li class="account-menu__button">
+						<a href="#sign-in">Войти</a>
+					</li>
+				</ul>
+			</div>
+			<form class="search-form">
+				<input value="Поиск" type="submit" class="search-form__submit">
+				<input class="search-form__input" type="text" placeholder="Что будем искать?" name="search">
+				<div class="search-form__extended-search">
+					<a href="#widesearch" class="navigation-menu__search-field--caption-item">расширенный поиск</a>
+					<span>&#9632</span>
+					<a href="#whatlookingfor" class="navigation-menu__search-field--caption-item">что ищут?</a>
+				</div>
+			</form>
+		</nav>
+	</div>
+</header>
+
+<!--
+<main>
+
+    </div>
+    <div class="slider container-fluid">
+        <h2 class="slider__header">Рейтинг ожиданий</h2>
+        <div class="slider__description container-fluid row">
+            <div class="col-4">
+                <div class="row slider__description--name">
+                    <div class="col">
+                        <h3 class="slider__description--name-russian">Мадагаскар 3</h3>
+                        <h3 class="slider__description--name-english">Madagascar 3: Europe's Most Wanted</h3>
+                    </div>
+                </div>
+                <div class="row slider__description--calendar">
+                    <div class="col-3">
+                        <img src="" alt="" class="slider__description--calendar-date">
+                    </div>
+                    <div class="col-3">
+                        <span class="slider__description--calendar-month">Июня</span>
+                        <span class="slider__description--rating">На сайте</span>
+                    </div>
+                    <div class="col-6 slider__description--rating">
+                        <img src="" alt=""> 9.5/10
+                    </div>
+                </div>
+                <div class="row slider__description--description">
+                    <p class="col">
+                        Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механический инноваций пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
+                    </p>
+                </div>
+
+                <div class="row slider__description--preview">
+                    <a href="#madagascar-preview" class="col-4">
+                        <img src="" alt="Madagascar">
+                    </a>
+                    <a href="#spider-man" class="col-4">
+                        <img src="" alt="New Spiderman">
+                    </a>
+                    <a href="#dictator" class="col-4">
+                        <img src="" alt="Dictator">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main container-fluid">
+        <div class="row main__slogan">
+            <div class="col">
+                <p>
+                    Пусть к вам проникнет наше настроение и останется только хорошее впечатление! <a href="#watch">Наслаждайтесь просмотр...</a>
+                </p>
+            </div>
+        </div>
+        <div class="row main__updates">
+            <div class="col-3 main__updates--movie">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="main__updates--movie-name">
+                            Новый Человек-паук (2012)
+                        </h4>
+                    </div>
+                </div>
+                <div class="row main__updates--movie-preview">
+                    <div class="col">
+                        <img src="" alt="spider-man-preview">
+                        <div>
+                            <img src="" alt="spider-man-rating">
+                        </div>
+                        <div>
+                            <img src="" alt="image-corner">
+                        </div>
+                    </div>
+                </div>
+                <div class="row main__updates--movie-shadow">
+                    <div class="col">
+                        <img src="" alt="shadow">
+                    </div>
+                </div>
+                <div class="row main__updates--movie-description">
+                    <div class="col">
+                        <p>
+                            Получив сверхчеловеческие способности, Питер Паркер пытается вести нормальную жизнь и разобраться, кем же он теперь стал. Но сейчас на нормальную жизнь ...
+                        </p>
+                    </div>
+                </div>
+                <div class="row main__updates--movie-link">
+                    <div class="col-6 justify-content-start">
+                        <a href="#first-movie-link">
+                            Смотреть сейчас
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 main__updates--movie">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="main__updates--movie-name">
+                            Авраам Линкольн: Охотник на вампиров (2012)
+                        </h4>
+                    </div>
+                </div>
+                <div class="row main__updates--movie-preview">
+                    <div class="col">
+                        <img src="" alt="lincoln-preview">
+                        <div>
+                            <img src="" alt="linkoln-rating">
+                        </div>
+                        <div>
+                            <img src="" alt="image-corner">
+                        </div>
+                    </div>
+                </div>
+                <div class="row main__updates--movie-shadow">
+                    <div class="col">
+                        <img src="" alt="shadow">
+                    </div>
+                </div>
+                <div class="row main__updates--movie-description">
+                    <div class="col">
+                        <p>
+                            Убита мать президента Линкольна, и все указывает на вампиров. После этой трагедии Линкольн объявляет войну до полного уничтожения ...
+                        </p>
+                    </div>
+                </div>
+                <div class="row main__updates--movie-link">
+                    <div class="col-6 justify-content-start">
+                        <a href="#second-movie-link">
+                            Смотреть сейчас
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 main__updates--movie">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="main__updates--movie-name">
+                            Темный рыцарь: Возрождение легенды (2012)
+                        </h4>
+                    </div>
+                </div>
+                <div class="row main__updates--movie-preview">
+                    <div class="col">
+                        <img src="" alt="lincoln-preview">
+                        <div>
+                            <img src="" alt="linkoln-rating">
+                        </div>
+                        <div>
+                            <img src="" alt="image-corner">
+                        </div>
+                    </div>
+                </div>
+                <div class="row main__updates--movie-shadow">
+                    <div class="col">
+                        <img src="" alt="shadow">
+                    </div>
+                </div>
+                <div class="row main__updates--movie-description">
+                    <div class="col">
+                        <p>
+                            Восемь лет спустя после событий Темного Рыцаря, в Готэм приходит новый лидер террористов, Бэйн, неся с собой хаос и разрушения ...
+                        </p>
+                    </div>
+                </div>
+                <div class="row main__updates--movie-link">
+                    <div class="col-6 justify-content-start">
+                        <a href="#last-movie-link">
+                            Смотреть сейчас
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 main__updates--menu">
+                <div class="row">
+                    <div class="col">
+                        <img src="" alt="#menu-icon">
+                        <div>
+                            <h3>Обновления <span class="bold-word">на сайте</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 main__updates--menu-movie-poster">
+                        <a href="#gijoe">
+                            <img src="" alt="gijoe">
+                        </a>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col">
+                                <p>
+                                    G.I. Joe: Бросок кобры 2 (2012)
+                                </p>
+                                <p>
+                                    G.I. Joe: Retaliation
+                                </p>
+                                <p>
+                                    Жанр: Триллер, Боевик, Фантастика, Приключения
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 main__updates--menu-movie-poster">
+                        <a href="#period">
+                            <img src="" alt="period">
+                        </a>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col">
+                                <p>
+                                    Ледниковый период 4: Континентальный дрейф (2012)
+                                </p>
+                                <p>
+                                    Жанр: Мультфильм
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Смотреть все обновления...
+                        </p>
+                        <img src="" alt="updates-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row main__content">
+            <div class="col-3">
+                <div class="row main__content--movie-poster">
+                    <div class="col">
+                        <img src="" alt="mechanic">
+                    </div>
+                </div>
+                <div class="row main__content--section-header">
+                    <div class="col">
+                        <h3>
+                            Актёры:
+                        </h3>
+                    </div>
+                </div>
+                <div class="row main__content--section-content">
+                    <div class="col">
+                        <p>
+                            Джейсон Стэтхэм, Дональд Сазерленд, Бен Фостер, Тони Голдуин, Джефф Чейз, Мини Анден, Джеймс Логан, Эдди Дж. Фернандез, Джошуа Бриджуотер, Джон МакКоннелл
+                        </p>
+                    </div>
+                </div>
+                <div class="row main__content--section-header">
+                    <div class="col">
+                        <h3>
+                            Продюссер:
+                        </h3>
+                    </div>
+                </div>
+                <div class="row main__content--section-content">
+                    <div class="col">
+                        <p>
+                            Рене Бессон, Роберт Чартофф, Уильям Чартофф, Роб Кауэн
+                        </p>
+                    </div>
+                </div>
+                <div class="row main__content--section-header">
+                    <div class="col">
+                        <h3>
+                            Режиссер:
+                        </h3>
+                    </div>
+                </div>
+                <div class="row main__content--section-content">
+                    <div class="col">
+                        <p>
+                            Саймон Уэст
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row main__content--section-header">
+                    <div class="col">
+                        <h3>
+                            Сценарист:
+                        </h3>
+                    </div>
+                </div>
+                <div class="row main__content--section-content">
+                    <div class="col">
+                        <p>
+                            Льюис Джон Карлино, Ричард Уэнк
+                        </p>
+                    </div>
+                </div>
+                <div class="row main__content--additional info">
+                    <div class="col-6">
+                        <p>
+                            Бюджет:
+                        </p>
+                        <p>
+                            $40 000 000
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            Сборы в мире:
+                        </p>
+                        <p>
+                            $51 070 807
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            Сборы в США:
+                        </p>
+                        <p>
+                            $29 121 498
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            Релиз на DVD:
+                        </p>
+                        <p>
+                            25 февраля 2011
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 main__content--central">
+                <div class="row main__content--central-info">
+                    <div class="col">
+                        <h1>
+                            Механик
+                        </h1>
+                        <h2>
+                            The Mechanic
+                        </h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    Год выпуска:
+                                </td>
+                                <td>
+                                    2010
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Страна:
+                                </td>
+                                <td>
+                                    США
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Жанр:
+                                </td>
+                                <td>
+                                    Боевики, Триллеры, Криминал
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Продолжительность:
+                                </td>
+                                <td>
+                                    89 мин.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Рейтинг фильма:
+                                </td>
+                                <td>
+                                    IMDB: 6.5 Кинопоиск: 6.72
+                                </td>
+                            </tr>
+                        </table>
+                        <h3>
+                            Сюжет:
+                        </h3>
+                        <p>
+                            Артур Бишоп очень хорошо знает свое дело. А дело его – убивать. Он наемник, лучший среди лучших. Артур всегда работает один, но ему приходится сотрудничать с молодым парнем. Теперь они команда. Вот только им все равно предстоит вступить в бой друг с другом, из которого хотя бы одному не уйти живым.
+                        </p>
+                    </div>
+                </div>
+                <div class="row main__content--player">
+                    <div class="col">
+                        <img src="" alt="player">
+                        <div>
+                            <img src="" alt="play">
+                        </div>
+                    </div>
+                </div>
+                <div class="main__content--comments">
+                    <div class="row">
+                        <div class="col-2">
+                            <figure>
+                                <p>
+                                    <img src="" alt="userpic">
+                                </p>
+                                <figcaption>
+                                    <a href="#reply">
+                                        Ответить
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="nickname">
+                                        <img src="" alt="icon">TritonGrown
+                                    </div>
+                                    <div class="datetime">
+                                        <span>26.05.2012 в 18:40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>
+                                        Фельмище супер,а для тех кто любит гонки вообще найлучшое что может бить.Для семейного просмотра тоже идеал.Фильм + 5
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-2">
+                            <figure>
+                                <p>
+                                    <img src="" alt="userpic">
+                                </p>
+                                <figcaption>
+                                    <a href="#reply">
+                                        Ответить
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="nickname" style="float: left;">
+                                        <img src="" alt="icon">TritonGrown
+                                    </div>
+                                    <div class="datetime">
+                                        <span style="float:right;">26.05.2012 в 18:40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>
+                                        Согласен с тобой))) фильм отличный ))) мне тоже понравился
+                                        <br>
+                                        Советую посмотреть!!!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__content--comment-textarea">
+                    <form action="URL">
+                        <div class="row">
+                            <div class="col">
+                                <textarea name="comment" placeholder="текст..." style="width: 100%"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary">Отправить сообщение</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="row">
+                    <div class="col">
+                        <img src="" alt="#menu-icon">
+                        <div>
+                            <h3>Кинокасса России ●<span class="bold-word">руб</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <table>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                Люди в черном 3<br>
+                                <span>Men in Black III</span>
+                            </td>
+                            <td>
+                                533050190
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                Запретная зона<br>
+                                <span>Chernobyl Diaries</span>
+                            </td>
+                            <td>
+                                45965000
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                Диктатор<br>
+                                <span>The Dictator</span>
+                            </td>
+                            <td>
+                                33295425
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                Мрачные тени<br>
+                                <span>Dark Shadows</span>
+                            </td>
+                            <td>
+                                19700249
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                Мстители<br>
+                                <span>The Avengers</span>
+                            </td>
+                            <td>
+                                18684846
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="" alt="#menu-icon">
+                        <div>
+                            <h3>Последние комментарии</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4>Рыцарь дня</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Давно пройшли часи лицарства і героїзму, коли лише за посмішку благородної дами творилися подвиги. Крістофер Нолан вдихнув нове життя в філософію рицарства.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4>Неудержимые</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Нестримні/The Expendables - Хоч про це вже казано і переказано, але...Сталоне, Стетхем, Джет Лі, Брюс Віліс, Мікі Рурк, Арнольд Шварцнегер у одному фільмі. Ви колись таке чули чи бачили?
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="" alt="#menu-icon">
+                        <div>
+                            <h3>Запросы - фильмы</h3>
+                            <a href="#all">всего</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <table>
+                            <tr>
+                                <td>
+                                    Прометей<br>
+                                    Prometheus
+                                </td>
+                                <td>
+                                    31.05
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Мадагаскар 3<br>
+                                    Madagascar 3: Europe's Most Wanted
+                                </td>
+                                <td>
+                                    07.06
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Белоснежка и охотник<br>
+                                    Snow White and the Huntsman
+                                </td>
+                                <td>
+                                    14.06
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Президент Линкольн: Охотник на вампиров<br>
+                                    Abraham Lincoln: Vampire Hunter
+                                </td>
+                                <td>
+                                    21.06
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Лето. Одноклассники. Любовь<br>
+                                    LOL
+                                </td>
+                                <td>
+                                    28.06
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4>
+                            Случайный фильм
+                        </h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <p>
+                                Морской бой
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#another-movie">
+                            другой случайный фильм
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+<footer>
+    <div style="display: flex;">
+        <div>
+            <h4>
+                Фильмы
+            </h4>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#moviess">База фильмов</a>
+                </li>
+                <li>
+                    <a href="#afisha">Афиша</a>
+                </li>
+                <li>
+                    <a href="#kinoteatr">В кинотеатрах</a>
+                </li>
+                <li>
+                    <a href="#skoro">Скоро</a>
+                </li>
+                <li>
+                    <a href="#anime">Аниме</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>
+                Люди
+            </h4>
+             <ul class="list-unstyled">
+                 <li>
+                     <a href="">Актеры</a>
+                 </li>
+             </ul>
+        </div>
+        <div>
+            <h4>
+                Мультимедиа
+            </h4>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#trailers">Трейлеры</a>
+                </li>
+                <li>
+                    <a href="#photo">Фото</a>
+                </li>
+                <li>
+                    <a href="#oboi">Обои</a>
+                </li>
+                <li>
+                    <a href="#soundtracks">Саундтреки</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>
+                Общение
+            </h4>
+             <ul class="list-unstyled">
+                 <li>
+                     <a href="#forum">Форум</a>
+                 </li>
+             </ul>
+        </div>
+        <div>
+            <h4>
+                Рейтинги
+            </h4>
+             <ul class="list-unstyled">
+                 <li>
+                     <a href="#best">Лучшие фильмы</a>
+                 </li>
+                 <li>
+                     <a href="#boxoffice">Box Office</a>
+                 </li>
+             </ul>
+        </div>
+        <div>
+            <h4>
+                Новости
+            </h4>
+             <ul class="list-unstyled">
+                 <li>
+                     <a href="#news">Новости кино</a>
+                 </li>
+             </ul>
+        </div>
+        <div>
+            <h4>
+                Пользователи
+            </h4>
+             <ul class="list-unstyled">
+                 <li>
+                     <a href="#registration">Регистрация</a>
+                 </li>
+                 <li>
+                     <a href="#login">Войти на сайт</a>
+                 </li>
+             </ul>
+        </div>
+        <div>
+            <h4>
+                Контакты
+            </h4>
+             <ul class="list-unstyled">
+                 <li>
+                     <a href="#contact">Форма обратной связи</a>
+                 </li>
+                 <li>
+                     <a href="#ad">Реклама на kinobase</a>
+                 </li>
+             </ul>
+        </div>
+    </div>
+    <div class="logos">
+        <a href="#kinobase">
+            <img src="" alt="kinobaselogo">
+        </a>
+        <a href="#artwork">
+            <img src="" alt="artworklogo">
+        </a>
+    </div>
+</footer>
 -->
-
-	<!--
-	<main>
-
-		</div>
-		<div class="slider container-fluid">
-			<h2 class="slider__header">Рейтинг ожиданий</h2>
-			<div class="slider__description container-fluid row">
-				<div class="col-4">
-					<div class="row slider__description--name">
-						<div class="col">
-							<h3 class="slider__description--name-russian">Мадагаскар 3</h3>
-							<h3 class="slider__description--name-english">Madagascar 3: Europe's Most Wanted</h3>
-						</div>
-					</div>
-					<div class="row slider__description--calendar">
-						<div class="col-3">
-							<img src="" alt="" class="slider__description--calendar-date">
-						</div>
-						<div class="col-3">
-							<span class="slider__description--calendar-month">Июня</span>
-							<span class="slider__description--rating">На сайте</span>
-						</div>
-						<div class="col-6 slider__description--rating">
-							<img src="" alt=""> 9.5/10
-						</div>
-					</div>
-					<div class="row slider__description--description">
-						<p class="col">
-							Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механический инноваций пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
-						</p>
-					</div>
-
-					<div class="row slider__description--preview">
-						<a href="#madagascar-preview" class="col-4">
-							<img src="" alt="Madagascar">
-						</a>
-						<a href="#spider-man" class="col-4">
-							<img src="" alt="New Spiderman">
-						</a>
-						<a href="#dictator" class="col-4">
-							<img src="" alt="Dictator">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="main container-fluid">
-			<div class="row main__slogan">
-				<div class="col">
-					<p>
-						Пусть к вам проникнет наше настроение и останется только хорошее впечатление! <a href="#watch">Наслаждайтесь просмотр...</a>
-					</p>
-				</div>
-			</div>
-			<div class="row main__updates">
-				<div class="col-3 main__updates--movie">
-					<div class="row">
-						<div class="col">
-							<h4 class="main__updates--movie-name">
-								Новый Человек-паук (2012)
-							</h4>
-						</div>
-					</div>
-					<div class="row main__updates--movie-preview">
-						<div class="col">
-							<img src="" alt="spider-man-preview">
-							<div>
-								<img src="" alt="spider-man-rating">
-							</div>
-							<div>
-								<img src="" alt="image-corner">
-							</div>
-						</div>
-					</div>
-					<div class="row main__updates--movie-shadow">
-						<div class="col">
-							<img src="" alt="shadow">
-						</div>
-					</div>
-					<div class="row main__updates--movie-description">
-						<div class="col">
-							<p>
-								Получив сверхчеловеческие способности, Питер Паркер пытается вести нормальную жизнь и разобраться, кем же он теперь стал. Но сейчас на нормальную жизнь ...
-							</p>
-						</div>
-					</div>
-					<div class="row main__updates--movie-link">
-						<div class="col-6 justify-content-start">
-							<a href="#first-movie-link">
-								Смотреть сейчас
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-3 main__updates--movie">
-					<div class="row">
-						<div class="col">
-							<h4 class="main__updates--movie-name">
-								Авраам Линкольн: Охотник на вампиров (2012)
-							</h4>
-						</div>
-					</div>
-					<div class="row main__updates--movie-preview">
-						<div class="col">
-							<img src="" alt="lincoln-preview">
-							<div>
-								<img src="" alt="linkoln-rating">
-							</div>
-							<div>
-								<img src="" alt="image-corner">
-							</div>
-						</div>
-					</div>
-					<div class="row main__updates--movie-shadow">
-						<div class="col">
-							<img src="" alt="shadow">
-						</div>
-					</div>
-					<div class="row main__updates--movie-description">
-						<div class="col">
-							<p>
-								Убита мать президента Линкольна, и все указывает на вампиров. После этой трагедии Линкольн объявляет войну до полного уничтожения ...
-							</p>
-						</div>
-					</div>
-					<div class="row main__updates--movie-link">
-						<div class="col-6 justify-content-start">
-							<a href="#second-movie-link">
-								Смотреть сейчас
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-3 main__updates--movie">
-					<div class="row">
-						<div class="col">
-							<h4 class="main__updates--movie-name">
-								Темный рыцарь: Возрождение легенды (2012)
-							</h4>
-						</div>
-					</div>
-					<div class="row main__updates--movie-preview">
-						<div class="col">
-							<img src="" alt="lincoln-preview">
-							<div>
-								<img src="" alt="linkoln-rating">
-							</div>
-							<div>
-								<img src="" alt="image-corner">
-							</div>
-						</div>
-					</div>
-					<div class="row main__updates--movie-shadow">
-						<div class="col">
-							<img src="" alt="shadow">
-						</div>
-					</div>
-					<div class="row main__updates--movie-description">
-						<div class="col">
-							<p>
-								Восемь лет спустя после событий Темного Рыцаря, в Готэм приходит новый лидер террористов, Бэйн, неся с собой хаос и разрушения ...
-							</p>
-						</div>
-					</div>
-					<div class="row main__updates--movie-link">
-						<div class="col-6 justify-content-start">
-							<a href="#last-movie-link">
-								Смотреть сейчас
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-3 main__updates--menu">
-					<div class="row">
-						<div class="col">
-							<img src="" alt="#menu-icon">
-							<div>
-								<h3>Обновления <span class="bold-word">на сайте</span></h3>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-3 main__updates--menu-movie-poster">
-							<a href="#gijoe">
-								<img src="" alt="gijoe">
-							</a>
-						</div>
-						<div class="col-9">
-							<div class="row">
-								<div class="col">
-									<p>
-										G.I. Joe: Бросок кобры 2 (2012)
-									</p>
-									<p>
-										G.I. Joe: Retaliation
-									</p>
-									<p>
-										Жанр: Триллер, Боевик, Фантастика, Приключения
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-3 main__updates--menu-movie-poster">
-							<a href="#period">
-								<img src="" alt="period">
-							</a>
-						</div>
-						<div class="col-9">
-							<div class="row">
-								<div class="col">
-									<p>
-										Ледниковый период 4: Континентальный дрейф (2012)
-									</p>
-									<p>
-										Жанр: Мультфильм
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<p>
-								Смотреть все обновления...
-							</p>
-							<img src="" alt="updates-icon">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row main__content">
-				<div class="col-3">
-					<div class="row main__content--movie-poster">
-						<div class="col">
-							<img src="" alt="mechanic">
-						</div>
-					</div>
-					<div class="row main__content--section-header">
-						<div class="col">
-							<h3>
-								Актёры:
-							</h3>
-						</div>
-					</div>
-					<div class="row main__content--section-content">
-						<div class="col">
-							<p>
-								Джейсон Стэтхэм, Дональд Сазерленд, Бен Фостер, Тони Голдуин, Джефф Чейз, Мини Анден, Джеймс Логан, Эдди Дж. Фернандез, Джошуа Бриджуотер, Джон МакКоннелл
-							</p>
-						</div>
-					</div>
-					<div class="row main__content--section-header">
-						<div class="col">
-							<h3>
-								Продюссер:
-							</h3>
-						</div>
-					</div>
-					<div class="row main__content--section-content">
-						<div class="col">
-							<p>
-								Рене Бессон, Роберт Чартофф, Уильям Чартофф, Роб Кауэн
-							</p>
-						</div>
-					</div>
-					<div class="row main__content--section-header">
-						<div class="col">
-							<h3>
-								Режиссер:
-							</h3>
-						</div>
-					</div>
-					<div class="row main__content--section-content">
-						<div class="col">
-							<p>
-								Саймон Уэст
-							</p>
-						</div>
-					</div>
-
-					<div class="row main__content--section-header">
-						<div class="col">
-							<h3>
-								Сценарист:
-							</h3>
-						</div>
-					</div>
-					<div class="row main__content--section-content">
-						<div class="col">
-							<p>
-								Льюис Джон Карлино, Ричард Уэнк
-							</p>
-						</div>
-					</div>
-					<div class="row main__content--additional info">
-						<div class="col-6">
-							<p>
-								Бюджет:
-							</p>
-							<p>
-								$40 000 000
-							</p>
-						</div>
-						<div class="col-6">
-							<p>
-								Сборы в мире:
-							</p>
-							<p>
-								$51 070 807
-							</p>
-						</div>
-						<div class="col-6">
-							<p>
-								Сборы в США:
-							</p>
-							<p>
-								$29 121 498
-							</p>
-						</div>
-						<div class="col-6">
-							<p>
-								Релиз на DVD:
-							</p>
-							<p>
-								25 февраля 2011
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 main__content--central">
-					<div class="row main__content--central-info">
-						<div class="col">
-							<h1>
-								Механик
-							</h1>
-							<h2>
-								The Mechanic
-							</h2>
-							<table>
-								<tr>
-									<td>
-										Год выпуска:
-									</td>
-									<td>
-										2010
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Страна:
-									</td>
-									<td>
-										США
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Жанр:
-									</td>
-									<td>
-										Боевики, Триллеры, Криминал
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Продолжительность:
-									</td>
-									<td>
-										89 мин.
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Рейтинг фильма:
-									</td>
-									<td>
-										IMDB: 6.5 Кинопоиск: 6.72
-									</td>
-								</tr>
-							</table>
-							<h3>
-								Сюжет:
-							</h3>
-							<p>
-								Артур Бишоп очень хорошо знает свое дело. А дело его – убивать. Он наемник, лучший среди лучших. Артур всегда работает один, но ему приходится сотрудничать с молодым парнем. Теперь они команда. Вот только им все равно предстоит вступить в бой друг с другом, из которого хотя бы одному не уйти живым.
-							</p>
-						</div>
-					</div>
-					<div class="row main__content--player">
-						<div class="col">
-							<img src="" alt="player">
-							<div>
-								<img src="" alt="play">
-							</div>
-						</div>
-					</div>
-					<div class="main__content--comments">
-						<div class="row">
-							<div class="col-2">
-								<figure>
-									<p>
-										<img src="" alt="userpic">
-									</p>
-									<figcaption>
-										<a href="#reply">
-											Ответить
-										</a>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="col-10">
-								<div class="row">
-									<div class="col">
-										<div class="nickname">
-											<img src="" alt="icon">TritonGrown
-										</div>
-										<div class="datetime">
-											<span>26.05.2012 в 18:40</span>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col">
-										<p>
-											Фельмище супер,а для тех кто любит гонки вообще найлучшое что может бить.Для семейного просмотра тоже идеал.Фильм + 5
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row justify-content-end">
-							<div class="col-2">
-								<figure>
-									<p>
-										<img src="" alt="userpic">
-									</p>
-									<figcaption>
-										<a href="#reply">
-											Ответить
-										</a>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="col-8">
-								<div class="row">
-									<div class="col">
-										<div class="nickname" style="float: left;">
-											<img src="" alt="icon">TritonGrown
-										</div>
-										<div class="datetime">
-											<span style="float:right;">26.05.2012 в 18:40</span>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col">
-										<p>
-											Согласен с тобой))) фильм отличный ))) мне тоже понравился
-											<br>
-											Советую посмотреть!!!
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="main__content--comment-textarea">
-						<form action="URL">
-							<div class="row">
-								<div class="col">
-									<textarea name="comment" placeholder="текст..." style="width: 100%"></textarea>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col">
-									<button type="button" class="btn btn-primary">Отправить сообщение</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-
-				<div class="col-3">
-					<div class="row">
-						<div class="col">
-							<img src="" alt="#menu-icon">
-							<div>
-								<h3>Кинокасса России ●<span class="bold-word">руб</span></h3>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<table>
-							<tr>
-								<td>
-									1
-								</td>
-								<td>
-									Люди в черном 3<br>
-									<span>Men in Black III</span>
-								</td>
-								<td>
-									533050190
-								</td>
-							</tr>
-							<tr>
-								<td>
-									2
-								</td>
-								<td>
-									Запретная зона<br>
-									<span>Chernobyl Diaries</span>
-								</td>
-								<td>
-									45965000
-								</td>
-							</tr>
-
-							<tr>
-								<td>
-									3
-								</td>
-								<td>
-									Диктатор<br>
-									<span>The Dictator</span>
-								</td>
-								<td>
-									33295425
-								</td>
-							</tr>
-
-
-							<tr>
-								<td>
-									4
-								</td>
-								<td>
-									Мрачные тени<br>
-									<span>Dark Shadows</span>
-								</td>
-								<td>
-									19700249
-								</td>
-							</tr>
-
-
-							<tr>
-								<td>
-									5
-								</td>
-								<td>
-									Мстители<br>
-									<span>The Avengers</span>
-								</td>
-								<td>
-									18684846
-								</td>
-							</tr>
-						</table>
-					</div>
-					<div class="row">
-						<div class="col">
-							<img src="" alt="#menu-icon">
-							<div>
-								<h3>Последние комментарии</h3>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<h4>Рыцарь дня</h4>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<p>
-								Давно пройшли часи лицарства і героїзму, коли лише за посмішку благородної дами творилися подвиги. Крістофер Нолан вдихнув нове життя в філософію рицарства.
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<h4>Неудержимые</h4>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<p>
-								Нестримні/The Expendables - Хоч про це вже казано і переказано, але...Сталоне, Стетхем, Джет Лі, Брюс Віліс, Мікі Рурк, Арнольд Шварцнегер у одному фільмі. Ви колись таке чули чи бачили?
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<img src="" alt="#menu-icon">
-							<div>
-								<h3>Запросы - фильмы</h3>
-								<a href="#all">всего</a>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<table>
-								<tr>
-									<td>
-										Прометей<br>
-										Prometheus
-									</td>
-									<td>
-										31.05
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Мадагаскар 3<br>
-										Madagascar 3: Europe's Most Wanted
-									</td>
-									<td>
-										07.06
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Белоснежка и охотник<br>
-										Snow White and the Huntsman
-									</td>
-									<td>
-										14.06
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Президент Линкольн: Охотник на вампиров<br>
-										Abraham Lincoln: Vampire Hunter
-									</td>
-									<td>
-										21.06
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Лето. Одноклассники. Любовь<br>
-										LOL
-									</td>
-									<td>
-										28.06
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<h4>
-								Случайный фильм
-							</h4>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div>
-								<p>
-									Морской бой
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<a href="#another-movie">
-								другой случайный фильм
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-	</main>
-	<footer>
-		<div style="display: flex;">
-			<div>
-				<h4>
-					Фильмы
-				</h4>
-				<ul class="list-unstyled">
-					<li>
-						<a href="#moviess">База фильмов</a>
-					</li>
-					<li>
-						<a href="#afisha">Афиша</a>
-					</li>
-					<li>
-						<a href="#kinoteatr">В кинотеатрах</a>
-					</li>
-					<li>
-						<a href="#skoro">Скоро</a>
-					</li>
-					<li>
-						<a href="#anime">Аниме</a>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<h4>
-					Люди
-				</h4>
-				 <ul class="list-unstyled">
-				 	<li>
-				 		<a href="">Актеры</a>
-				 	</li>
-				 </ul>
-			</div>
-			<div>
-				<h4>
-					Мультимедиа
-				</h4>
-				<ul class="list-unstyled">
-					<li>
-						<a href="#trailers">Трейлеры</a>
-					</li>
-					<li>
-						<a href="#photo">Фото</a>
-					</li>
-					<li>
-						<a href="#oboi">Обои</a>
-					</li>
-					<li>
-						<a href="#soundtracks">Саундтреки</a>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<h4>
-					Общение
-				</h4>
-				 <ul class="list-unstyled">
-				 	<li>
-				 		<a href="#forum">Форум</a>
-				 	</li>
-				 </ul>
-			</div>
-			<div>
-				<h4>
-					Рейтинги
-				</h4>
-				 <ul class="list-unstyled">
-				 	<li>
-				 		<a href="#best">Лучшие фильмы</a>
-				 	</li>
-				 	<li>
-				 		<a href="#boxoffice">Box Office</a>
-				 	</li>
-				 </ul>
-			</div>
-			<div>
-				<h4>
-					Новости
-				</h4>
-				 <ul class="list-unstyled">
-				 	<li>
-				 		<a href="#news">Новости кино</a>
-				 	</li>
-				 </ul>
-			</div>
-			<div>
-				<h4>
-					Пользователи
-				</h4>
-				 <ul class="list-unstyled">
-				 	<li>
-				 		<a href="#registration">Регистрация</a>
-				 	</li>
-				 	<li>
-				 		<a href="#login">Войти на сайт</a>
-				 	</li>
-				 </ul>
-			</div>
-			<div>
-				<h4>
-					Контакты
-				</h4>
-				 <ul class="list-unstyled">
-				 	<li>
-				 		<a href="#contact">Форма обратной связи</a>
-				 	</li>
-				 	<li>
-				 		<a href="#ad">Реклама на kinobase</a>
-				 	</li>
-				 </ul>
-			</div>
-		</div>
-		<div class="logos">
-			<a href="#kinobase">
-				<img src="" alt="kinobaselogo">
-			</a>
-			<a href="#artwork">
-				<img src="" alt="artworklogo">
-			</a>
-		</div>
-	</footer>
-	-->
 </body>
 </html>

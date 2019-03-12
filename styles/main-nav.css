@@ -1,5 +1,5 @@
-.main-nav-wrapper {
-    background-color: rgb(36, 36, 36);
+.section-wrapper_main-nav {
+    background-image: url("../img/navbar-grey.png");
 }
 
 .main-nav {
@@ -48,8 +48,4 @@
 .nav-menu__item:last-child {
     border-right: 1px solid #141414;
     box-shadow: inset 1px 0px 0px 0px rgba(50, 49, 49, 1), 1px 0px 0px 0px rgba(50,49,49,1);
-}
-
-.nav-menu__button {
-    cursor: pointer;
 }
