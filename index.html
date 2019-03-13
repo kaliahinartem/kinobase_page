@@ -7,7 +7,7 @@
 	<title>kinobase</title>
 </head>
 <body>
-<header class="">
+<header class="header">
 	<div class="section-wrapper section-wrapper_main-nav">
 		<nav class="page-container main-nav">
 			<div class="nav-logo-bar">
@@ -67,52 +67,42 @@
 	</div>
 </header>
 
-<!--
-<main>
 
-    </div>
-    <div class="slider container-fluid">
-        <h2 class="slider__header">Рейтинг ожиданий</h2>
-        <div class="slider__description container-fluid row">
-            <div class="col-4">
-                <div class="row slider__description--name">
-                    <div class="col">
-                        <h3 class="slider__description--name-russian">Мадагаскар 3</h3>
-                        <h3 class="slider__description--name-english">Madagascar 3: Europe's Most Wanted</h3>
-                    </div>
-                </div>
-                <div class="row slider__description--calendar">
-                    <div class="col-3">
-                        <img src="" alt="" class="slider__description--calendar-date">
-                    </div>
-                    <div class="col-3">
-                        <span class="slider__description--calendar-month">Июня</span>
-                        <span class="slider__description--rating">На сайте</span>
-                    </div>
-                    <div class="col-6 slider__description--rating">
-                        <img src="" alt=""> 9.5/10
-                    </div>
-                </div>
-                <div class="row slider__description--description">
-                    <p class="col">
-                        Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механический инноваций пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
-                    </p>
-                </div>
 
-                <div class="row slider__description--preview">
-                    <a href="#madagascar-preview" class="col-4">
-                        <img src="" alt="Madagascar">
-                    </a>
-                    <a href="#spider-man" class="col-4">
-                        <img src="" alt="New Spiderman">
-                    </a>
-                    <a href="#dictator" class="col-4">
-                        <img src="" alt="Dictator">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+<main class="main-content">
+	<section class="slider">
+		<h2 class="slider__header">Рейтинг ожиданий</h2>
+		<div class="section-wrapper section-wrapper_slider">
+			<div class="page-container page-container_slider">
+				<div class="slider__button"></div>
+				<div class="slider-content-container">
+					<div class="slider__description">
+						<h3 class="description__header description__header_rus">Мадагаскар 3</h3>
+						<h3 class="description__header description__header_eng">Madagascar 3: Europe's Most Wanted</h3>
+						<div class="calendar">
+							<div class="calendar__date">07</div>
+							<span class="calendar__month">Июня</span>
+							<div class="movie-rating-wrapper">
+									<img src="img/rating.png" alt="">
+									<span class="movie-rating-mark">9.5/10</span>
+							</div>
+						</div>
+						<p class="movie-description">
+							Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механический инноваций пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
+						</p>
+					</div>
+					<div class="slider__preview">
+						<div class="slider__toggle slider__toggle_madagascar"></div>
+						<div class="slider__toggle slider__toggle_spiderman"></div>
+						<div class="slider__toggle slider__toggle_dictator"></div>
+					</div>
+				</div>
+				<div class="slider__button slider__button_right"></div>
+			</div>
+		</div>
+	</section>
+
+	<!--
     <div class="main container-fluid">
         <div class="row main__slogan">
             <div class="col">
@@ -748,7 +738,10 @@
                 </div>
             </div>
         </div>
+        -->
+
 </main>
+
 <footer>
     <div style="display: flex;">
         <div>
@@ -871,6 +864,5 @@
         </a>
     </div>
 </footer>
--->
 </body>
 </html>

@@ -1,6 +1,5 @@
 .section-wrapper_search-bar {
     background-image: url("../img/navbar-blue.png");
-
 }
 
 .main-search-bar {
@@ -41,6 +40,8 @@
     position: absolute;
     background-size: cover;
     background-image: url(../img/corner.png);
+    pointer-events: none;
+    z-index: 5;
 }
 
 .search-form {
@@ -51,7 +52,7 @@
 }
 
 .search-form__submit {
-    flex-basis: 11.5%;
+    flex-basis: 11.4%;
     background: transparent;
     border-width: 0 1px;
     border-color: rgb(16, 60, 132);
@@ -99,6 +100,8 @@
     position: absolute;
     background-size: cover;
     background-image: url(../img/corner.png);
+    pointer-events: none;
+    z-index: 5;
 }
 
 .search-form::after {
@@ -110,4 +113,5 @@
     position: absolute;
     background-size: cover;
     background-image: url(../img/search-corner.png);
+    pointer-events: none;
 }

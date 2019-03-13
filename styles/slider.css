@@ -1,0 +1,179 @@
+.slider {
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.page-container_slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.section-wrapper_slider {
+    position: relative;
+    background-image: url("../img/carousel1.jpg"), url("../img/bg-darker.png");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    height: 288px;
+}
+
+.section-wrapper_slider::after {
+    content: "";
+    top: 248px;
+    left: 15%;
+    width: 150px;
+    height: 48px;
+    position: absolute;
+    background-size: cover;
+    background-image: url(../img/corner-2.png);
+    pointer-events: none;
+}
+
+.slider__header {
+    font-size: 19px;
+    font-weight: bold;
+    color: rgba(252, 252, 252, .5);
+    text-shadow: -1px -1px 0px rgb(88, 88, 88);
+    padding-left: 20.7%;
+}
+
+.slider__button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(210, 210, 210);
+    background-color: rgb(238, 238, 238);
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.25);
+    width: 31px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("../img/arrow-left.png");
+    background-repeat: no-repeat;
+    background-position: 8px 6px;
+}
+
+.slider__button_right {
+    transform: rotate(180deg);
+}
+
+.slider__button:hover {
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.75);
+}
+
+.slider-content-container {
+    max-width: 310px;
+    position: relative;
+    left: 29%;
+    background-color: transparent;
+}
+
+.slider__description {
+    position: relative;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .89);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 5px;
+}
+
+.slider-content-container::after {
+    content: "";
+    top: -10px;
+    left: 81%;
+    width: 56px;
+    height: 42px;
+    position: absolute;
+    background-size: cover;
+    background-image: url(../img/corner.png);
+    pointer-events: none;
+    transform: rotate(180deg);
+    z-index: 100;
+}
+
+.slider-content-container::before {
+    transform: rotate(90deg);
+    content: "";
+    top: 40%;
+    left: -19px;
+    width: 65px;
+    height: 48px;
+    position: absolute;
+    background-size: cover;
+    background-image: url(../img/corner.png);
+    pointer-events: none;
+    z-index: 100;
+}
+
+.description__header_rus {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.description__header_eng {
+    font-size: 12px;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.calendar__date {
+    padding-left: 4px;
+    letter-spacing: 9px;
+    width: 84px;
+    height: 60px;
+    line-height: 57px;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    background-image: url("../img/calendar-background.png");
+    text-align: center;
+}
+
+.calendar__month {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.slider__preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider__toggle {
+    flex-basis: 30%;
+    height: 44px;
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+.slider__toggle_madagascar {
+    background-image: url("../img/madagascar-preview-1.png");
+    background-repeat: no-repeat;
+}
+
+.slider__toggle_spiderman {
+    background-image: url("../img/superman-preview-1.png");
+    background-repeat: no-repeat;
+}
+
+.slider__toggle_dictator {
+    background-image: url("../img/third-preview-1.png");
+    background-repeat: no-repeat;
+}
+
+.movie-rating-wrapper {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-left: 10%;
+}
+
+.movie-rating-mark {
+    padding-left: 5px;
+}
