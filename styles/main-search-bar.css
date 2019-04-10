@@ -55,6 +55,7 @@
     flex-basis: 11.4%;
     background: transparent;
     border-width: 0 1px;
+    border-style: solid;
     border-color: rgb(16, 60, 132);
     color: inherit;
     height: 100%;
@@ -69,7 +70,6 @@
 
 .search-form__submit:focus, .search-form_submit {
     outline: none;
-    border-style: solid;
 }
 
 .search-form__input {

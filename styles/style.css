@@ -1,6 +1,7 @@
 @import "main-nav.css";
 @import "main-search-bar.css";
 @import "slider.css";
+@import "suggested-movie.css";
 
 * {
 	box-sizing: border-box;
@@ -26,21 +27,11 @@ ul, ol {
 	list-style: none;
 }
 
-.section-wrapper {
-	width: 100%;
-}
-
-.page-container {
-	max-width: 1000px;
-	margin: 0 auto;
+body {
 	position: relative;
 }
 
-main-content {
-	position: relative;
-}
-
-.main-content:before {
+body:before {
 	content: "";
 	background-image: url("../img/bg-white.png");
 	position: absolute;
@@ -53,6 +44,34 @@ main-content {
 	z-index: -100;
 }
 
+.section-wrapper {
+	width: 100%;
+}
+
+.page-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
 .movie-description {
 	font-size: 11px;
+}
+
+.slogan {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 14px;
+	font-weight: normal;
+	text-shadow: -1px -1px 0px rgb(255, 255, 255);
+	text-align: center;
+}
+
+.slogan_link {
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.main-content {
+	max-width: 75%;
 }

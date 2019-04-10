@@ -8,7 +8,7 @@
 </head>
 <body>
 <header class="header">
-	<div class="section-wrapper section-wrapper_main-nav">
+	<section class="section-wrapper section-wrapper_main-nav">
 		<nav class="page-container main-nav">
 			<div class="nav-logo-bar">
 				<a href="#kinobase">
@@ -41,8 +41,8 @@
 				</ul>
 			</div>
 		</nav>
-	</div>
-	<div class="section-wrapper section-wrapper_search-bar">
+	</section>
+	<section class="section-wrapper section-wrapper_search-bar">
 		<nav class="page-container main-search-bar">
 			<div class="account-menu">
 				<ul class="account-menu__list">
@@ -64,233 +64,194 @@
 				</div>
 			</form>
 		</nav>
-	</div>
+	</section>
+    <section class="slider">
+        <h2 class="slider__header">Рейтинг ожиданий</h2>
+        <div class="section-wrapper section-wrapper_slider">
+            <div class="page-container page-container_slider">
+                <div class="slider__button"></div>
+                <div class="slider-content-container">
+                    <div class="slider__description">
+                        <h3 class="slider__movie-name-rus">Мадагаскар 3</h3>
+                        <h3 class="slider__movie-name-eng">Madagascar 3: Europe's Most Wanted</h3>
+                        <div class="calendar">
+                            <div class="calendar__date">07</div>
+                            <span class="calendar__month">Июня</span>
+                            <div class="slider-rating-wrapper">
+                                <img src="img/rating.png" alt="">
+                                <span class="slider-rating-mark">9.5/10</span>
+                            </div>
+                        </div>
+                        <p class="movie-description">
+                            Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механический инноваций пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
+                        </p>
+                    </div>
+                    <div class="slider__preview">
+                        <div class="slider__toggle slider__toggle_madagascar"></div>
+                        <div class="slider__toggle slider__toggle_spiderman"></div>
+                        <div class="slider__toggle slider__toggle_dictator"></div>
+                    </div>
+                </div>
+                <div class="slider__button slider__button_right"></div>
+            </div>
+        </div>
+    </section>
 </header>
 
 
 
-<main class="main-content">
-	<section class="slider">
-		<h2 class="slider__header">Рейтинг ожиданий</h2>
-		<div class="section-wrapper section-wrapper_slider">
-			<div class="page-container page-container_slider">
-				<div class="slider__button"></div>
-				<div class="slider-content-container">
-					<div class="slider__description">
-						<h3 class="description__header description__header_rus">Мадагаскар 3</h3>
-						<h3 class="description__header description__header_eng">Madagascar 3: Europe's Most Wanted</h3>
-						<div class="calendar">
-							<div class="calendar__date">07</div>
-							<span class="calendar__month">Июня</span>
-							<div class="movie-rating-wrapper">
-									<img src="img/rating.png" alt="">
-									<span class="movie-rating-mark">9.5/10</span>
-							</div>
-						</div>
-						<p class="movie-description">
-							Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механический инноваций пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится.
-						</p>
-					</div>
-					<div class="slider__preview">
-						<div class="slider__toggle slider__toggle_madagascar"></div>
-						<div class="slider__toggle slider__toggle_spiderman"></div>
-						<div class="slider__toggle slider__toggle_dictator"></div>
-					</div>
-				</div>
-				<div class="slider__button slider__button_right"></div>
-			</div>
-		</div>
-	</section>
+<main class="page-container">
+    <div class="slogan">
+        Пусть к вам проникнет наше настроение и останется только хорошее впечатление! <a href="#watch" class="slogan_link">Наслаждайтесь просмотр...</a>
+    </div>
+    <div class="main-content">
+        <div class="page-container">
 
-	<!--
-    <div class="main container-fluid">
-        <div class="row main__slogan">
-            <div class="col">
-                <p>
-                    Пусть к вам проникнет наше настроение и останется только хорошее впечатление! <a href="#watch">Наслаждайтесь просмотр...</a>
-                </p>
-            </div>
-        </div>
-        <div class="row main__updates">
-            <div class="col-3 main__updates--movie">
-                <div class="row">
-                    <div class="col">
-                        <h4 class="main__updates--movie-name">
+
+            <section class="suggested-movie">
+                <div class="suggested-movie__container">
+                    <div class="suggested-movie__header-container">
+                        <h4 class="suggested-movie__name">
                             Новый Человек-паук (2012)
                         </h4>
                     </div>
-                </div>
-                <div class="row main__updates--movie-preview">
-                    <div class="col">
-                        <img src="" alt="spider-man-preview">
-                        <div>
-                            <img src="" alt="spider-man-rating">
+                    <div class="movie-preview">
+                        <div class="movie-poster movie-poster_spiderman">
+                            <div class="preview-rating">
+                                <img src="img/rating.png" alt="spider-man-rating">
+                            </div>
                         </div>
-                        <div>
-                            <img src="" alt="image-corner">
-                        </div>
+                        <div class="poster-shadow"></div>
                     </div>
-                </div>
-                <div class="row main__updates--movie-shadow">
-                    <div class="col">
-                        <img src="" alt="shadow">
-                    </div>
-                </div>
-                <div class="row main__updates--movie-description">
-                    <div class="col">
+                    <div class="suggested-movie__description">
                         <p>
                             Получив сверхчеловеческие способности, Питер Паркер пытается вести нормальную жизнь и разобраться, кем же он теперь стал. Но сейчас на нормальную жизнь ...
                         </p>
                     </div>
-                </div>
-                <div class="row main__updates--movie-link">
-                    <div class="col-6 justify-content-start">
-                        <a href="#first-movie-link">
+                    <a href="#third-movie-link">
+                        <div class="watch-now-button">
                             Смотреть сейчас
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
 
-            <div class="col-3 main__updates--movie">
-                <div class="row">
-                    <div class="col">
-                        <h4 class="main__updates--movie-name">
-                            Авраам Линкольн: Охотник на вампиров (2012)
+                <div class="suggested-movie__container">
+                    <div class="suggested-movie__header-container">
+                        <h4 class="suggested-movie__name">
+                            Авраам Линкольн: Охотник на <br> вампиров (2012)
                         </h4>
                     </div>
-                </div>
-                <div class="row main__updates--movie-preview">
-                    <div class="col">
-                        <img src="" alt="lincoln-preview">
-                        <div>
-                            <img src="" alt="linkoln-rating">
+                    <div class="movie-preview">
+                        <div class="movie-poster movie-poster_lincoln">
+                            <div class="preview-rating">
+                                <img src="img/rating.png" alt="linkoln-rating">
+                            </div>
                         </div>
-                        <div>
-                            <img src="" alt="image-corner">
-                        </div>
+                        <div class="poster-shadow"></div>
                     </div>
-                </div>
-                <div class="row main__updates--movie-shadow">
-                    <div class="col">
-                        <img src="" alt="shadow">
-                    </div>
-                </div>
-                <div class="row main__updates--movie-description">
-                    <div class="col">
+                    <div class="suggested-movie__description">
                         <p>
                             Убита мать президента Линкольна, и все указывает на вампиров. После этой трагедии Линкольн объявляет войну до полного уничтожения ...
                         </p>
                     </div>
-                </div>
-                <div class="row main__updates--movie-link">
-                    <div class="col-6 justify-content-start">
-                        <a href="#second-movie-link">
+                    <a href="#second-movie-link">
+
+                        <div class="watch-now-button">
                             Смотреть сейчас
-                        </a>
-                    </div>
+                        </div>
+
+                    </a>
                 </div>
-            </div>
-            <div class="col-3 main__updates--movie">
-                <div class="row">
-                    <div class="col">
-                        <h4 class="main__updates--movie-name">
-                            Темный рыцарь: Возрождение легенды (2012)
+
+                <div class="suggested-movie__container">
+                    <div class="suggested-movie__header-container">
+                        <h4 class="suggested-movie__name">
+                            Темный рыцарь: Возрождение <br> легенды (2012)
                         </h4>
                     </div>
-                </div>
-                <div class="row main__updates--movie-preview">
-                    <div class="col">
-                        <img src="" alt="lincoln-preview">
-                        <div>
-                            <img src="" alt="linkoln-rating">
+                    <div class="movie-preview">
+                        <div class="movie-poster movie-poster_batman">
+                            <div class="preview-rating">
+                                <img src="img/rating.png" alt="batman-rating">
+                            </div>
                         </div>
-                        <div>
-                            <img src="" alt="image-corner">
-                        </div>
+                        <div class="poster-shadow"></div>
                     </div>
-                </div>
-                <div class="row main__updates--movie-shadow">
-                    <div class="col">
-                        <img src="" alt="shadow">
-                    </div>
-                </div>
-                <div class="row main__updates--movie-description">
-                    <div class="col">
+                    <div class="suggested-movie__description">
                         <p>
                             Восемь лет спустя после событий Темного Рыцаря, в Готэм приходит новый лидер террористов, Бэйн, неся с собой хаос и разрушения ...
                         </p>
                     </div>
-                </div>
-                <div class="row main__updates--movie-link">
-                    <div class="col-6 justify-content-start">
-                        <a href="#last-movie-link">
+                    <a href="#third-movie-link">
+                        <div class="watch-now-button">
                             Смотреть сейчас
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 main__updates--menu">
-                <div class="row">
-                    <div class="col">
-                        <img src="" alt="#menu-icon">
-                        <div>
-                            <h3>Обновления <span class="bold-word">на сайте</span></h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="row">
-                    <div class="col-3 main__updates--menu-movie-poster">
-                        <a href="#gijoe">
-                            <img src="" alt="gijoe">
-                        </a>
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col">
-                                <p>
-                                    G.I. Joe: Бросок кобры 2 (2012)
-                                </p>
-                                <p>
-                                    G.I. Joe: Retaliation
-                                </p>
-                                <p>
-                                    Жанр: Триллер, Боевик, Фантастика, Приключения
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-3 main__updates--menu-movie-poster">
-                        <a href="#period">
-                            <img src="" alt="period">
-                        </a>
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col">
-                                <p>
-                                    Ледниковый период 4: Континентальный дрейф (2012)
-                                </p>
-                                <p>
-                                    Жанр: Мультфильм
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p>
-                            Смотреть все обновления...
-                        </p>
-                        <img src="" alt="updates-icon">
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
+    </div>
+<!--            <div class="col-3 main__updates&#45;&#45;menu">-->
+<!--                <div class="row">-->
+<!--                    <div class="col">-->
+<!--                        <img src="" alt="#menu-icon">-->
+<!--                        <div>-->
+<!--                            <h3>Обновления <span class="bold-word">на сайте</span></h3>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-3 main__updates&#45;&#45;menu-movie-poster">-->
+<!--                        <a href="#gijoe">-->
+<!--                            <img src="" alt="gijoe">-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="col-9">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col">-->
+<!--                                <p>-->
+<!--                                    G.I. Joe: Бросок кобры 2 (2012)-->
+<!--                                </p>-->
+<!--                                <p>-->
+<!--                                    G.I. Joe: Retaliation-->
+<!--                                </p>-->
+<!--                                <p>-->
+<!--                                    Жанр: Триллер, Боевик, Фантастика, Приключения-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="row">-->
+<!--                    <div class="col-3 main__updates&#45;&#45;menu-movie-poster">-->
+<!--                        <a href="#period">-->
+<!--                            <img src="" alt="period">-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="col-9">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col">-->
+<!--                                <p>-->
+<!--                                    Ледниковый период 4: Континентальный дрейф (2012)-->
+<!--                                </p>-->
+<!--                                <p>-->
+<!--                                    Жанр: Мультфильм-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                    <div class="col">-->
+<!--                        <p>-->
+<!--                            Смотреть все обновления...-->
+<!--                        </p>-->
+<!--                        <img src="" alt="updates-icon">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="row main__content">
             <div class="col-3">
                 <div class="row main__content--movie-poster">
@@ -738,7 +699,6 @@
                 </div>
             </div>
         </div>
-        -->
 
 </main>
 

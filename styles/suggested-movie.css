@@ -1,0 +1,73 @@
+.suggested-movie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.suggested-movie__container {
+    max-width: 29.3333%;
+}
+
+.suggested-movie__header-container {
+    height: 30px;
+}
+
+.movie-poster::before {
+    content: "";
+    bottom: -3px;
+    left: 6px;
+    width: 42px;
+    height: 32px;
+    position: absolute;
+    background-image: url(../img/corner.png);
+    background-size: cover;
+    pointer-events: none;
+}
+
+.movie-poster {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    height: 153px;
+    cursor: pointer;
+}
+
+.movie-poster_spiderman {
+    background-image: url("../img/spiderman.jpg"), url("../img/bg-darker.png");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+}
+
+.movie-poster_lincoln {
+    background-image: url("../img/linkoln.jpg"), url("../img/bg-darker.png");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+}
+
+.movie-poster_batman {
+     background-image: url("../img/batman.jpg"), url("../img/bg-darker.png");
+     background-repeat: no-repeat, repeat;
+     background-position: center;
+ }
+
+.preview-rating {
+    padding: 7px;
+}
+
+.poster-shadow {
+    height: 28px;
+    width: 100%;
+    background: url("../img/shadow.png") no-repeat center;
+}
+
+.watch-now-button {
+    margin-top: 12px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 36, 36);
+    border-radius: 3px;
+    box-shadow: 0 2px 0 0 rgb(107, 107, 107);
+}
