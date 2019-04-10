@@ -1,0 +1,65 @@
+.main-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-post__sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35.333333%;
+    background-image: url("../img/navbar-grey.png");
+    background-repeat: repeat;
+    padding-bottom: 14px;
+    border-radius: 5px;
+    box-shadow: 0 4px 2px -2px rgb(109, 109, 109);
+}
+
+.sidecover-container {
+    margin: 8px auto;
+    width: 94.71698%;
+    height: 354px;
+    background-color: rgb(109, 109, 109);
+}
+
+.sidecover-poster {
+    margin: 2px;
+    width: 247px;
+    height: 349px;
+    background-image: url("../img/mechanic.jpg");
+    background-position: center;
+}
+
+.side-section {
+    border-top: 1px solid rgb(18, 18, 18);
+    border-bottom: 1px solid rgb(18, 18, 18);
+    box-shadow: inset 0px 1px 0px 0px rgba(52,51,51,1), 0px 1px 0px 0px rgba(52,51,51,1);
+}
+
+.side-header {
+    padding: 5px 8px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.side-info {
+    padding-top: 3px;
+    padding-bottom: 13px;
+    padding-left: 8px;
+    color: rgb(109, 108, 108);
+}
+
+.side-adinfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.side-header_adinfo {
+    font-size: 12px;
+}
+
+.side-adinfo__block {
+    width: 50%;
+}

@@ -2,6 +2,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.suggested-movie::before {
+    content: "";
+    top: -25px;
+    left: -50px;
+    width: 52px;
+    height: 343px;
+    position: absolute;
+    background-image: url(../img/decor1.png);
+    background-size: cover;
+    pointer-events: none;
 }
 
 .suggested-movie__container {

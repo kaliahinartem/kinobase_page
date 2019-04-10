@@ -2,6 +2,7 @@
 @import "main-search-bar.css";
 @import "slider.css";
 @import "suggested-movie.css";
+@import "mainpost.css";
 
 * {
 	box-sizing: border-box;
@@ -74,4 +75,5 @@ body:before {
 
 .main-content {
 	max-width: 75%;
+	position: relative;
 }
