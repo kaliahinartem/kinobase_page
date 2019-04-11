@@ -2,7 +2,8 @@
 @import "main-search-bar.css";
 @import "slider.css";
 @import "suggested-movie.css";
-@import "mainpost.css";
+@import "main-post__sidebar.css";
+@import "main-post__content.css";
 
 * {
 	box-sizing: border-box;
@@ -34,11 +35,8 @@ body {
 
 body:before {
 	content: "";
-	background-image: url("../img/bg-white.png");
+	background-image: url("../img/bg-light.png");
 	position: absolute;
-	filter: blur(3px) contrast(90%);
-	top: 0;
-	left: 0;
 	background-repeat: repeat;
 	width: 100%;
 	height: 100%;

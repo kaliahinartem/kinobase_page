@@ -7,7 +7,7 @@
 .main-post__sidebar {
     display: flex;
     flex-direction: column;
-    flex-basis: 35.333333%;
+    max-width: 35.333333%;
     background-image: url("../img/navbar-grey.png");
     background-repeat: repeat;
     padding-bottom: 14px;
@@ -16,18 +16,15 @@
 }
 
 .sidecover-container {
-    margin: 8px auto;
-    width: 94.71698%;
+    margin: 8px auto 20px auto;
     height: 354px;
-    background-color: rgb(109, 109, 109);
 }
 
 .sidecover-poster {
-    margin: 2px;
+    border: 2px solid rgb(109, 109, 109);
     width: 247px;
-    height: 349px;
-    background-image: url("../img/mechanic.jpg");
-    background-position: center;
+    height: 353px;
+    background: url("../img/mechanic.jpg") no-repeat center;
 }
 
 .side-section {

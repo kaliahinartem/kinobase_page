@@ -255,19 +255,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 main__content--central">
-                <div class="row main__content--central-info">
-                    <div class="col">
-                        <h1>
+                <div class="main-post__content">
+                    <div class="main-post__info main-post-section-wrapper">
+                        <h1 class="main-post__title">
                             Механик
                         </h1>
-                        <h2>
+                        <h2 class="main-post__title main-post__title_orig">
                             The Mechanic
                         </h2>
-                        <table>
+                        <table class="infotable">
                             <tr>
-                                <td>
+                                <td class="infotable__header">
                                     Год выпуска:
                                 </td>
                                 <td>
@@ -275,7 +273,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="infotable__header">
                                     Страна:
                                 </td>
                                 <td>
@@ -283,7 +281,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="infotable__header">
                                     Жанр:
                                 </td>
                                 <td>
@@ -291,7 +289,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="infotable__header">
                                     Продолжительность:
                                 </td>
                                 <td>
@@ -299,7 +297,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="infotable__header">
                                     Рейтинг фильма:
                                 </td>
                                 <td>
@@ -307,107 +305,114 @@
                                 </td>
                             </tr>
                         </table>
-                        <h3>
+                        <h3 class="infotable__header infotable__header_plot">
                             Сюжет:
                         </h3>
                         <p>
                             Артур Бишоп очень хорошо знает свое дело. А дело его – убивать. Он наемник, лучший среди лучших. Артур всегда работает один, но ему приходится сотрудничать с молодым парнем. Теперь они команда. Вот только им все равно предстоит вступить в бой друг с другом, из которого хотя бы одному не уйти живым.
                         </p>
-                    </div>
-                </div>
-                <div class="row main__content--player">
-                    <div class="col">
-                        <img src="" alt="player">
-                        <div>
-                            <img src="" alt="play">
+                        <div class="main-rating-wrapper">
+                            <span class="main-post__rating">
+                                9,8/10
+                            </span>
                         </div>
                     </div>
-                </div>
-                <div class="main__content--comments">
-                    <div class="row">
-                        <div class="col-2">
-                            <figure>
-                                <p>
-                                    <img src="" alt="userpic">
-                                </p>
-                                <figcaption>
-                                    <a href="#reply">
-                                        Ответить
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-10">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="nickname">
-                                        <img src="" alt="icon">TritonGrown
-                                    </div>
-                                    <div class="datetime">
-                                        <span>26.05.2012 в 18:40</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p>
-                                        Фельмище супер,а для тех кто любит гонки вообще найлучшое что может бить.Для семейного просмотра тоже идеал.Фильм + 5
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="main-post-section-wrapper player">
+                        <div class="main-post__player">
+                            <div class="player__button"></div>
                         </div>
                     </div>
-                    <div class="row justify-content-end">
-                        <div class="col-2">
-                            <figure>
-                                <p>
-                                    <img src="" alt="userpic">
-                                </p>
-                                <figcaption>
-                                    <a href="#reply">
-                                        Ответить
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-8">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="nickname" style="float: left;">
-                                        <img src="" alt="icon">TritonGrown
-                                    </div>
-                                    <div class="datetime">
-                                        <span style="float:right;">26.05.2012 в 18:40</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p>
-                                        Согласен с тобой))) фильм отличный ))) мне тоже понравился
-                                        <br>
-                                        Советую посмотреть!!!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
                 </div>
-                <div class="main__content--comment-textarea">
-                    <form action="URL">
-                        <div class="row">
-                            <div class="col">
-                                <textarea name="comment" placeholder="текст..." style="width: 100%"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button type="button" class="btn btn-primary">Отправить сообщение</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+
+<!--                <div class="main__content&#45;&#45;comments">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-2">-->
+<!--                            <figure>-->
+<!--                                <p>-->
+<!--                                    <img src="" alt="userpic">-->
+<!--                                </p>-->
+<!--                                <figcaption>-->
+<!--                                    <a href="#reply">-->
+<!--                                        Ответить-->
+<!--                                    </a>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                        </div>-->
+<!--                        <div class="col-10">-->
+<!--                            <div class="row">-->
+<!--                                <div class="col">-->
+<!--                                    <div class="nickname">-->
+<!--                                        <img src="" alt="icon">TritonGrown-->
+<!--                                    </div>-->
+<!--                                    <div class="datetime">-->
+<!--                                        <span>26.05.2012 в 18:40</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <div class="col">-->
+<!--                                    <p>-->
+<!--                                        Фельмище супер,а для тех кто любит гонки вообще найлучшое что может бить.Для семейного просмотра тоже идеал.Фильм + 5-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row justify-content-end">-->
+<!--                        <div class="col-2">-->
+<!--                            <figure>-->
+<!--                                <p>-->
+<!--                                    <img src="" alt="userpic">-->
+<!--                                </p>-->
+<!--                                <figcaption>-->
+<!--                                    <a href="#reply">-->
+<!--                                        Ответить-->
+<!--                                    </a>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                        </div>-->
+<!--                        <div class="col-8">-->
+<!--                            <div class="row">-->
+<!--                                <div class="col">-->
+<!--                                    <div class="nickname" style="float: left;">-->
+<!--                                        <img src="" alt="icon">TritonGrown-->
+<!--                                    </div>-->
+<!--                                    <div class="datetime">-->
+<!--                                        <span style="float:right;">26.05.2012 в 18:40</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <div class="col">-->
+<!--                                    <p>-->
+<!--                                        Согласен с тобой))) фильм отличный ))) мне тоже понравился-->
+<!--                                        <br>-->
+<!--                                        Советую посмотреть!!!-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="main__content&#45;&#45;comment-textarea">-->
+<!--                    <form action="URL">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col">-->
+<!--                                <textarea name="comment" placeholder="текст..." style="width: 100%"></textarea>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="row">-->
+<!--                            <div class="col">-->
+<!--                                <button type="button" class="btn btn-primary">Отправить сообщение</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
 
 
             <!--            <div class="col-3 main__updates&#45;&#45;menu">-->
@@ -669,127 +674,127 @@
 
 <!--</main>-->
 
-<footer>
-    <div style="display: flex;">
-        <div>
-            <h4>
-                Фильмы
-            </h4>
-            <ul class="list-unstyled">
-                <li>
-                    <a href="#moviess">База фильмов</a>
-                </li>
-                <li>
-                    <a href="#afisha">Афиша</a>
-                </li>
-                <li>
-                    <a href="#kinoteatr">В кинотеатрах</a>
-                </li>
-                <li>
-                    <a href="#skoro">Скоро</a>
-                </li>
-                <li>
-                    <a href="#anime">Аниме</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h4>
-                Люди
-            </h4>
-             <ul class="list-unstyled">
-                 <li>
-                     <a href="">Актеры</a>
-                 </li>
-             </ul>
-        </div>
-        <div>
-            <h4>
-                Мультимедиа
-            </h4>
-            <ul class="list-unstyled">
-                <li>
-                    <a href="#trailers">Трейлеры</a>
-                </li>
-                <li>
-                    <a href="#photo">Фото</a>
-                </li>
-                <li>
-                    <a href="#oboi">Обои</a>
-                </li>
-                <li>
-                    <a href="#soundtracks">Саундтреки</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h4>
-                Общение
-            </h4>
-             <ul class="list-unstyled">
-                 <li>
-                     <a href="#forum">Форум</a>
-                 </li>
-             </ul>
-        </div>
-        <div>
-            <h4>
-                Рейтинги
-            </h4>
-             <ul class="list-unstyled">
-                 <li>
-                     <a href="#best">Лучшие фильмы</a>
-                 </li>
-                 <li>
-                     <a href="#boxoffice">Box Office</a>
-                 </li>
-             </ul>
-        </div>
-        <div>
-            <h4>
-                Новости
-            </h4>
-             <ul class="list-unstyled">
-                 <li>
-                     <a href="#news">Новости кино</a>
-                 </li>
-             </ul>
-        </div>
-        <div>
-            <h4>
-                Пользователи
-            </h4>
-             <ul class="list-unstyled">
-                 <li>
-                     <a href="#registration">Регистрация</a>
-                 </li>
-                 <li>
-                     <a href="#login">Войти на сайт</a>
-                 </li>
-             </ul>
-        </div>
-        <div>
-            <h4>
-                Контакты
-            </h4>
-             <ul class="list-unstyled">
-                 <li>
-                     <a href="#contact">Форма обратной связи</a>
-                 </li>
-                 <li>
-                     <a href="#ad">Реклама на kinobase</a>
-                 </li>
-             </ul>
-        </div>
-    </div>
-    <div class="logos">
-        <a href="#kinobase">
-            <img src="" alt="kinobaselogo">
-        </a>
-        <a href="#artwork">
-            <img src="" alt="artworklogo">
-        </a>
-    </div>
-</footer>
+<!--<footer>-->
+<!--    <div style="display: flex;">-->
+<!--        <div>-->
+<!--            <h4>-->
+<!--                Фильмы-->
+<!--            </h4>-->
+<!--            <ul class="list-unstyled">-->
+<!--                <li>-->
+<!--                    <a href="#moviess">База фильмов</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#afisha">Афиша</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#kinoteatr">В кинотеатрах</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#skoro">Скоро</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#anime">Аниме</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <h4>-->
+<!--                Люди-->
+<!--            </h4>-->
+<!--             <ul class="list-unstyled">-->
+<!--                 <li>-->
+<!--                     <a href="">Актеры</a>-->
+<!--                 </li>-->
+<!--             </ul>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <h4>-->
+<!--                Мультимедиа-->
+<!--            </h4>-->
+<!--            <ul class="list-unstyled">-->
+<!--                <li>-->
+<!--                    <a href="#trailers">Трейлеры</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#photo">Фото</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#oboi">Обои</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#soundtracks">Саундтреки</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <h4>-->
+<!--                Общение-->
+<!--            </h4>-->
+<!--             <ul class="list-unstyled">-->
+<!--                 <li>-->
+<!--                     <a href="#forum">Форум</a>-->
+<!--                 </li>-->
+<!--             </ul>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <h4>-->
+<!--                Рейтинги-->
+<!--            </h4>-->
+<!--             <ul class="list-unstyled">-->
+<!--                 <li>-->
+<!--                     <a href="#best">Лучшие фильмы</a>-->
+<!--                 </li>-->
+<!--                 <li>-->
+<!--                     <a href="#boxoffice">Box Office</a>-->
+<!--                 </li>-->
+<!--             </ul>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <h4>-->
+<!--                Новости-->
+<!--            </h4>-->
+<!--             <ul class="list-unstyled">-->
+<!--                 <li>-->
+<!--                     <a href="#news">Новости кино</a>-->
+<!--                 </li>-->
+<!--             </ul>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <h4>-->
+<!--                Пользователи-->
+<!--            </h4>-->
+<!--             <ul class="list-unstyled">-->
+<!--                 <li>-->
+<!--                     <a href="#registration">Регистрация</a>-->
+<!--                 </li>-->
+<!--                 <li>-->
+<!--                     <a href="#login">Войти на сайт</a>-->
+<!--                 </li>-->
+<!--             </ul>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <h4>-->
+<!--                Контакты-->
+<!--            </h4>-->
+<!--             <ul class="list-unstyled">-->
+<!--                 <li>-->
+<!--                     <a href="#contact">Форма обратной связи</a>-->
+<!--                 </li>-->
+<!--                 <li>-->
+<!--                     <a href="#ad">Реклама на kinobase</a>-->
+<!--                 </li>-->
+<!--             </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="logos">-->
+<!--        <a href="#kinobase">-->
+<!--            <img src="" alt="kinobaselogo">-->
+<!--        </a>-->
+<!--        <a href="#artwork">-->
+<!--            <img src="" alt="artworklogo">-->
+<!--        </a>-->
+<!--    </div>-->
+<!--</footer>-->
 </body>
 </html>

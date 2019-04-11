@@ -19,6 +19,7 @@
     align-items: center;
     width: 50%;
     padding-left: 3.7rem;
+    font-weight: bold;
 }
 
 .account-menu__list {
@@ -34,7 +35,7 @@
 .account-menu::after {
     content: "";
     bottom: -10px;
-    left: 0%;
+    left: 0;
     width: 56px;
     height: 43px;
     position: absolute;
@@ -87,7 +88,7 @@
 .search-form__extended-search {
     position: absolute;
     font-size: 10px;
-    top: 39px;
+    top: 80%;
     left: 65%;
 }
 
