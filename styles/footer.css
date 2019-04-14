@@ -1,0 +1,11 @@
+.footer {
+    margin-top: 120px;
+    background: url("../img/bg-darker.png") repeat;
+}
+
+.footer-wrapper {
+    margin-top: 6px;
+    background: url("../img/navbar-grey.png") repeat;
+    position: relative;
+    top: 6px;
+}
