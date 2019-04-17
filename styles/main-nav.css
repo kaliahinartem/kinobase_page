@@ -8,10 +8,12 @@
     flex-direction: row;
     align-items: center;
     color: rgb(109, 108, 108);
+    justify-content: space-between;
+
 }
 
 .nav-logo-bar {
-    width: 50%;
+    width: 35%;
     font-size: 0.85rem;
     display: flex;
     align-items: center;
@@ -19,6 +21,20 @@
 
 .nav-logo-bar__slogan {
     padding-left: 0.85rem;
+}
+
+.slogan {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: -1px -1px 0px rgb(255, 255, 255);
+    text-align: center;
+}
+
+.slogan_link {
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .nav-menu {
@@ -42,10 +58,101 @@
     flex-basis: auto;
     flex-grow: 1;
     font-weight: bold;
-    border-left: 1px solid #141414;
-    box-shadow: inset 1px 0px 0px 0px rgba(50,49,49,1);
-}
-.nav-menu__item:last-child {
     border-right: 1px solid #141414;
+    box-shadow: 1px 0px 0px 0px rgba(50,49,49,1);
+}
+.nav-menu__item:first-child {
+    min-width: 12.7%;
+    border-left: 1px solid #141414;
     box-shadow: inset 1px 0px 0px 0px rgba(50, 49, 49, 1), 1px 0px 0px 0px rgba(50,49,49,1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-nav {
+        height: 40px;
+        font-size: 120%;
+    }
+
+    .nav-logo-bar {
+        display: none;
+    }
+
+    .nav-menu {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .main-nav {
+        height: 48px;
+        padding: 0 5%;
+    }
+
+    .nav-logo-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .s-menu-icon {
+        display: flex;
+        flex-direction: column;
+        height: 22px;
+        width: 30px;
+        justify-content: space-between;
+    }
+
+    .s-menu-icon__line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: rgb(109, 108, 108);
+        z-index: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu, .nav-logo-bar__slogan, .slogan {
+        display: none;
+    }
+
+    .main-nav {
+        height: 48px;
+        padding: 0 5%;
+    }
+
+    .nav-logo-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+
+    .s-menu-icon {
+        display: flex;
+        flex-direction: column;
+        height: 22px;
+        width: 30px;
+        justify-content: space-between;
+    }
+
+    .s-menu-icon__line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: rgb(109, 108, 108);
+        z-index: 1;
+    }
 }

@@ -1,0 +1,263 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25%;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar-block {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 94.4%;
+    margin: 0 auto;
+    background: url("../img/navbar-grey.png") repeat;
+    box-shadow: 0 4px 2px -2px rgb(109, 109, 109);
+}
+
+.side-wrapper {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__updates-menu {
+    width: 94.4%;
+    flex-grow: 1;
+    margin: 26px auto 0;
+    height: 266px;
+    border-radius: 4px;
+}
+
+.sidebar__header {
+    margin: 8px auto 4px;
+    background: url("../img/sub-header.png") no-repeat center;
+    background-size: 100%;
+    height: 35px;
+    width: 96%;
+}
+
+.sidebar__header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 27px;
+    margin-left: auto;
+}
+
+.sidebar__header-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.sidebar__highlight {
+    color: rgb(247, 15, 59);
+    font-weight: bold;
+}
+
+.sidebar__highlight_link {
+    font-size: 9px;
+    position: absolute;
+    right: -22%;
+}
+
+.new-movie {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    border-bottom: 1px solid rgb(18, 18, 18);
+    box-shadow: 0px 1px 0px 0px rgba(70, 70, 70, 1);
+}
+
+.new-movie__name {
+    text-decoration: underline;
+}
+
+.new-movie__name_orig {
+    text-decoration: none;
+}
+
+.new-movie__poster {
+    height: 71px;
+    min-width: 69px;
+    border: 2px solid rgba(100, 100, 100, 0.6);
+}
+.new-movie__poster_gijoe {
+    background: url("../img/joe.jpg") no-repeat center;
+}
+
+.new-movie__poster_ice-age {
+    background: url("../img/ice-age.jpg") no-repeat center;
+}
+
+.new-movie__description {
+    font-size: 11px;
+}
+
+.new-movie__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 62.71%;
+    min-height: 71px;
+}
+
+.new-movie__name {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.new-movie__name_orig {
+    font-weight: normal;
+}
+
+.sidebar__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+}
+
+.sidebar__footer-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__footer-link::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: -20%;
+    background: url("../img/movie.png") no-repeat center;
+    cursor: pointer;
+}
+
+.cashbox td:first-child {
+    vertical-align: top;
+}
+
+.cashbox td:last-child {
+    text-align: center;
+}
+
+.widget-section {
+    padding: 0 10px;
+}
+
+.widget__movie-name_orig {
+    font-size: 11px;
+    color: rgb(120, 119, 119);
+}
+
+.sidebar-widget-wrapper {
+    width: 100%;
+    background: url("../img/bg-white.png");
+    border-radius: 5px;
+}
+
+.last-comment__wrapper {
+    padding-bottom: 8px;
+}
+
+.last-comment__content {
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.requests td:last-child {
+    vertical-align: bottom;
+}
+
+.requests td {
+    padding-top: 5px;
+}
+
+.random-movie {
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.random-movie__header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(110, 106, 106);
+    margin-bottom: 5px;
+}
+
+.random-movie__preview {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 95px;
+    background: url("../img/sea-battle.jpg") no-repeat center;
+    cursor: pointer;
+}
+
+.random-movie__name {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 35px;
+    width: 100%;
+}
+
+.random-movie__change {
+    display: block;
+    font-size: 10px;
+    text-align: right;
+    margin-top: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .new-movie__name_orig, .new-movie__description, .sidebar__footer-link::after, .sidebar__highlight_link {
+        display: none;
+    }
+
+    .new-movie {
+        flex-direction: column;
+    }
+
+    .new-movie__info {
+        min-height: initial;
+        max-width: initial;
+    }
+
+    .new-movie__name {
+        text-align: center;
+    }
+
+    .new-movie__info {
+        max-width: 88%;
+    }
+
+    .sidebar__footer {
+        min-height: 10%;
+    }
+
+    .sidebar__header-title {
+        font-size: 11px;
+    }
+
+    .random-movie__header {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .side-wrapper, .sidebar-widget-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .side-wrapper, .sidebar-widget-wrapper {
+        display: none;
+    }
+}

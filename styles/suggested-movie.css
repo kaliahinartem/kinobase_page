@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 20px;
+    max-width: 75%;
 }
 
 .suggested-movie::before {
@@ -18,16 +18,18 @@
 }
 
 .suggested-movie__container {
-    max-width: 29.3333%;
+    display: flex;
+    flex-direction: column;
+    max-width: 29%;
 }
 
 .suggested-movie__header-container {
     height: 30px;
 }
 
-.movie-poster::before {
+.movie-poster-wrapper::before {
     content: "";
-    bottom: -3px;
+    bottom: -7px;
     left: 6px;
     width: 42px;
     height: 32px;
@@ -35,52 +37,97 @@
     background-image: url(../img/corner.png);
     background-size: cover;
     pointer-events: none;
+    z-index: 100;
 }
 
-.movie-poster {
-    display: flex;
+.movie-poster-wrapper {
     position: relative;
-    justify-content: flex-end;
-    height: 153px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie-poster {
+    z-index: 1;
+    width: 100%;
 }
 
-.movie-poster_spiderman {
-    background-image: url("../img/spiderman.jpg"), url("../img/bg-darker.png");
-    background-repeat: no-repeat, repeat;
+.movie-poster-wrapper::after {
+    content: '';
+    position: absolute;
+    background-image: url("../img/bg-darker.png");
+    background-repeat: repeat;
     background-position: center;
-}
-
-.movie-poster_lincoln {
-    background-image: url("../img/linkoln.jpg"), url("../img/bg-darker.png");
-    background-repeat: no-repeat, repeat;
-    background-position: center;
-}
-
-.movie-poster_batman {
-     background-image: url("../img/batman.jpg"), url("../img/bg-darker.png");
-     background-repeat: no-repeat, repeat;
-     background-position: center;
- }
-
-.preview-rating {
-    padding: 7px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
 }
 
 .poster-shadow {
     height: 28px;
     width: 100%;
     background: url("../img/shadow.png") no-repeat center;
+    background-size: 100%;
+}
+.suggested-movie__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-size: 11px;
+    min-height: 85px;
 }
 
 .watch-now-button {
-    margin-top: 12px;
     display: inline-block;
-    font-size: 12px;
     font-weight: bold;
-    padding: 8px;
+    padding: 6px;
     color: rgb(255, 255, 255);
     background-color: rgb(36, 36, 36);
     border-radius: 3px;
     box-shadow: 0 2px 0 0 rgb(107, 107, 107);
+}
+
+.suggestions-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .suggested-movie::before {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .suggested-movie::before {
+        display: none;
+    }
+
+    .suggested-movie, .main-content {
+        max-width: 100%;
+    }
+
+    .main-post-section-wrapper {
+        height: initial;
+    }
+}
+
+@media (max-width: 480px) {
+    .suggested-movie::before, .suggested-movie__plot {
+        display: none;
+    }
+
+    .suggested-movie {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .main-post-section-wrapper {
+        height: initial;
+    }
+
+    .suggested-movie__description {
+        min-height: initial;
+        text-align: center;
+    }
 }

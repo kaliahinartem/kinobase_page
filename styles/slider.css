@@ -24,8 +24,8 @@
 
 .section-wrapper_slider::after {
     content: "";
-    top: 247px;
     left: 15%;
+    bottom: -8px;
     width: 150px;
     height: 48px;
     position: absolute;
@@ -46,15 +46,12 @@
     border-style: solid;
     border-width: 1px;
     border-color: rgb(210, 210, 210);
-    background-color: rgb(238, 238, 238);
     border-radius: 50%;
     box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.25);
-    width: 31px;
+    width: 30px;
     height: 30px;
     cursor: pointer;
-    background-image: url("../img/arrow-left.png");
-    background-repeat: no-repeat;
-    background-position: 8px 6px;
+    background: rgb(238, 238, 238) url("../img/arrow-left.png") no-repeat center;
 }
 
 .slider__button_right {
@@ -95,10 +92,10 @@
     z-index: 100;
 }
 
-.slider-content-container::before {
+.slider__description::before {
     transform: rotate(90deg);
     content: "";
-    top: 40%;
+    top: 50%;
     left: -19px;
     width: 65px;
     height: 48px;
@@ -179,4 +176,89 @@
 
 .slider-rating-mark {
     padding-left: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .slider-content-container {
+        left: 19%;
+    }
+
+    .slider__button {
+        width: 45px;
+        height: 45px;
+        background-size: 35%;
+    }
+
+    .section-wrapper_slider::after {
+        left: 10%;
+    }
+
+    .slider__header {
+        font-size: 24px;
+    }
+
+    .page-container_slider {
+        padding: 0 5%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .slider-content-container {
+        position: static;
+    }
+
+    .slider__button {
+        width: 45px;
+        height: 45px;
+        background-size: 35%;
+    }
+
+    .section-wrapper_slider::after {
+        left: 3%;
+    }
+
+    .slider__header {
+        font-size: 24px;
+    }
+
+    .page-container_slider {
+        padding: 0 5%;
+    }
+
+    .slider__description {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .section-wrapper_slider::after, .slider__description {
+        display: none;
+    }
+
+    .slider-content-container {
+        position: static;
+        width: 80%;
+    }
+
+    .section-wrapper_slider {
+        height: 165px;
+        background-size: cover;
+    }
+
+    .slider__header {
+        padding-left: 5%;
+    }
+
+    .slider__button {
+        box-shadow: none;
+    }
+
+    .page-container_slider {
+        padding: 2% 1%;
+        align-items: flex-end;
+    }
+
 }

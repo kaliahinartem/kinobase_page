@@ -16,15 +16,16 @@
 }
 
 .sidecover-container {
-    margin: 8px auto 20px auto;
-    height: 354px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 3% 8%;
 }
 
-.sidecover-poster {
+.sidecover {
+    width: 100%;
     border: 2px solid rgb(109, 109, 109);
-    width: 247px;
-    height: 353px;
-    background: url("../img/mechanic.jpg") no-repeat center;
 }
 
 .side-section {
@@ -59,4 +60,42 @@
 
 .side-adinfo__block {
     width: 50%;
+}
+
+@media (min-width: 481px) and (max-width: 547px) {
+    .side-header, .side-info, .side-section {
+        display: none;
+    }
+
+    .main-post__sidebar {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 5%;
+        padding: 0;
+        width: 28%;
+    }
+
+    .plot {
+        max-width: 65%;
+    }
+}
+
+@media (max-width: 480px) {
+    .side-header, .side-info, .side-section {
+        display: none;
+    }
+
+    .main-post__sidebar {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 5%;
+        padding: 0;
+        width: 28%;
+    }
+
+    .plot {
+        max-width: 65%;
+    }
 }

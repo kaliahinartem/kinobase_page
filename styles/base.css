@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma;
+}
+
+html {
+    font-size: 11px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button:focus, button:active {
+    outline: none;
+    border: none;
+}
+
+body {
+    position: relative;
+}
+
+body:before {
+    content: "";
+    background-image: url("../img/bg-light.png");
+    position: absolute;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+.section-wrapper {
+    width: 100%;
+}
+
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.movie-description {
+    font-size: 11px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-content {
+    max-width: 74%;
+    position: relative;
+}
